@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Articulat";
+    src: url(./fonts/ArticulatCF-ExtraBold.otf);
+}
+@font-face {
+    font-family:"normal";
+    src: url(./fonts/ArticulatCF-Normal.otf);
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+nav {
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+.logo a {
+    font-family: "Articulat";
+    font-size: 30px;
+    font-weight: 800;
+    color: #111;
+    transition: all .5s ease 0s;
+}
+
+.logo a:hover {
+    color: #007aff;
+}
+
+.pageLinks a {
+    font-family: "Articulat";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: initial;
+    color: #111;
+    padding: 0 10px 0 10px;
+    position: relative;
+    top: 5px;
+    right: 80px;
+}
+
+.pageLinks a:hover {
+    color: #007aff;
+}
+
+.menu {
+    position: relative;
+    top: 10px;
+}
+.eagle{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.eagle h1 a{
+    text-decoration: none;
+    color: #111;
+    font-family: "Articulat";
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: -.025em;
+}
+.card img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.container{
+    margin: auto;
+    width: 85%;
+}
+.card_container {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+}
+
+.card {
+font-family: "normal";
+    position: relative;
+}
+
+.card_container::-webkit-scrollbar {
+    display: none;
+}
+.card ul li{
+     margin-left: 15px;
+}
+li::marker{
+    font-size: 7px;
+}
+.name{
+    font-size: 16px;
+    line-height: 20px;
+}
+strong{
+    color: #d61;
+    font-weight:bolder;
+    padding-right: 10px;
+}
+.description{
+    font-size: 16px;
+    line-height: 20px;
+}
