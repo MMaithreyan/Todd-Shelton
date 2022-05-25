@@ -316,6 +316,7 @@ footer {
 .logos {
     padding-left: 100px;
     padding-right: 25px;
+    display: flex;
 }
 
 .logos img {
@@ -370,7 +371,7 @@ footer {
     }
 }
 @media screen and (max-width:760px) {
-    .loga a{
+    .logo a{
         font-size: 21px;
     }
     .updates{
@@ -403,5 +404,9 @@ footer {
         padding-left: 40px;
         position: relative;
         bottom: 60px;
+        display: block;
+    }
+    .logos img{
+        padding-bottom: 10px;
     }
 }

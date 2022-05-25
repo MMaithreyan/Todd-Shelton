@@ -1,8 +1,6 @@
 let prv = document.querySelectorAll(".prv_btn");
 let nxt = document.querySelectorAll(".nxt_btn");
 
-
-
 // prv.addEventListener("click", function () {
 //     console.log("hello");
 //     document.querySelector(".container").scrollLeft -= 450;
@@ -15,11 +13,14 @@ let nxt = document.querySelectorAll(".nxt_btn");
 
 
 
+
+
 let i, j;
 for (i = 0; i < prv.length; i++) {
     prv[i].addEventListener("click", function () {
         console.log("hello");
-        let a = document.querySelectorAll(".container");
+        let a = document.querySelector(".show").nextElementSibling;
+
         a.forEach(a => {
             a.scrollLeft -= 450
         });
@@ -27,13 +28,11 @@ for (i = 0; i < prv.length; i++) {
     });
 }
 
-
 for (j = 0; j < nxt.length; j++) {
     nxt[j].addEventListener("click", function () {
         console.log("hello");
 
-        let b = document.querySelectorAll(".container");
-
+        let b = document.querySelector(".show").nextElementSibling;
         b.forEach(b=>{
             b.scrollLeft += 450;
         });
