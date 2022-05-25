@@ -115,10 +115,9 @@ nav a {
     text-decoration: none;
     color: #111;
     font-size: 72px;
-    line-height: 80px;
+    line-height: 130px;
     font-weight: 700;
     letter-spacing: -.025em;
-
     transition: all .5s ease 0s;
 }
 
