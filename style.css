@@ -108,7 +108,6 @@ nav a {
     width: 100%;
     margin: auto;
     padding-top: 180px;
-    padding-bottom: 20px;
 }
 
 .title1 h1 a {
@@ -127,7 +126,7 @@ nav a {
     margin: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(6, 400px);
+    grid-template-columns: repeat(6, 30%);
     overflow-x: scroll;
     gap: 50px;
 }
@@ -137,8 +136,7 @@ nav a {
 }
 
 .products img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -235,7 +233,7 @@ li::marker {
 
 .date_release {
     display: grid;
-    grid-template-columns: 0.3fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
 }
 
 .date, .release {
@@ -256,8 +254,8 @@ li::marker {
 }
 
 .signup input {
-    width: 35%;
-    height: 40px;
+    width: 380px;
+    height: 60px;
     border: none;
     border-bottom: 1px solid #ccc;
     margin-bottom: 100px;
@@ -279,9 +277,9 @@ li::marker {
 }
 
 .signup button {
-    width: 90px;
-    height: 50px;
-    border-radius: 10%;
+    width: 145px;
+    height: 60px;
+    border-radius: 13px;
     border-color: #1192ec;
     background-color: #007aff;
     color: #fff;
@@ -291,7 +289,22 @@ li::marker {
     font-weight: 600;
     font-size: 16px;
 }
-
+.updates{
+    display: none;
+}
+.up_title{
+    font-family: "bold";
+    font-size: 700;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.up_date{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "medium";
+    font-weight: 500;
+    padding-top: 5px;
+}
 footer {
     width: 100%;
     padding-top: 140px;
@@ -307,6 +320,15 @@ footer {
 
 .logos img {
     padding-right: 20px;
+}
+.logos a{
+    font-family: "regular";
+    font-size: 12px;
+    letter-spacing: .01em;
+    color: #aaa;
+    line-height: 24px;
+    padding-right: 35px;
+    text-decoration: none;
 }
 
 .policy a {
@@ -326,13 +348,60 @@ footer {
 
 }
 
-@media screen and (max-width:1248px) {
-    .products img {
-        width: 300px;
-        height: 300px;
-    }
+@media screen and (max-width:1201px) {
 .container{
-    grid-template-columns: repeat(6, 330px);
+    grid-template-columns: repeat(6, 47%);
 
 }
+}
+@media screen and (max-width:600px) {
+.container{
+    grid-template-columns: repeat(6, 100%);
+}
+}
+@media screen and (max-width:1000px) {
+    .title1 h1 a{
+        font-size: 48px;
+    }
+}
+@media screen and (max-width:766px) {
+    .title1 h1 a{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width:760px) {
+    .loga a{
+        font-size: 21px;
+    }
+    .updates{
+        display: block;
+    }
+    .date_release{
+        display: none;
+    }
+}
+@media screen and (max-width:646px) {
+    .signup button{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .signup input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:883px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .policy{
+        padding-left: 40px;
+    }
+    .logos {
+        padding-left: 40px;
+        position: relative;
+        bottom: 60px;
+    }
 }
