@@ -34,7 +34,6 @@ let cont8 = document.querySelectorAll(".container8");
 prv.forEach((left)=>{
     left.addEventListener("click",()=>{
         container.forEach((move)=>{
-            console.log("hello");
             move.scrollLeft -= 450;
         })
     })
@@ -43,7 +42,6 @@ prv.forEach((left)=>{
 nxt.forEach((right)=>{
     right.addEventListener("click",()=>{
         container.forEach((move)=>{
-            console.log("hello");
             move.scrollLeft += 450;
         })
     })
@@ -55,7 +53,6 @@ nxt.forEach((right)=>{
 prv2.forEach((left)=>{
     left.addEventListener("click",()=>{
         cont2.forEach((move)=>{
-            console.log("hello");
             move.scrollLeft -= 450;
         })
     })
@@ -64,7 +61,6 @@ prv2.forEach((left)=>{
 nxt2.forEach((right)=>{
     right.addEventListener("click",()=>{
         cont2.forEach((move)=>{
-            console.log("hello");
             move.scrollLeft += 450;
         })
     })
