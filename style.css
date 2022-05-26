@@ -47,11 +47,12 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1;
+    background-color: #f9f9f9;
 }
 
 .navbar {
     margin: auto;
-    width: 89%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     padding-top: 80px;
@@ -108,6 +109,7 @@ nav a {
     width: 100%;
     margin: auto;
     padding-top: 180px;
+    padding-bottom: 20px;
 }
 
 .title1 h1 a {
@@ -115,7 +117,7 @@ nav a {
     text-decoration: none;
     color: #111;
     font-size: 72px;
-    line-height: 130px;
+    line-height: 90px;
     font-weight: 700;
     letter-spacing: -.025em;
     transition: all .5s ease 0s;
@@ -125,7 +127,7 @@ nav a {
     margin: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(6, 30%);
+    grid-template-columns: repeat(6, 31%);
     overflow-x: scroll;
     gap: 50px;
 }
@@ -189,17 +191,26 @@ li::marker {
     text-align: center;
     border-radius: 50%;
     color: #111;
-    top: 120px;
+    top: 170px;
     font-size: 20px;
     box-shadow: 0px 1px 1px 0px #111;
 }
 
-.show {
+.icon {
     position: relative;
     margin: auto;
     width: 100%;
     z-index: 0;
 }
+.fa-angle-left:before {
+    content: "\f104" !important;
+    font-size: 10px;
+}
+.fa-angle-right:before {
+    content: "\f105" !important;
+    font-size: 10px;
+}
+
 
 .seeall {
     font-family: "demibold";
@@ -219,7 +230,7 @@ li::marker {
 }
 
 .brand {
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .upcomming {
@@ -227,7 +238,6 @@ li::marker {
     font-family: "bold";
     font-weight: 700;
     color: #111;
-    padding-top: 25px;
 }
 
 .date_release {
@@ -241,13 +251,14 @@ li::marker {
     line-height: 36px;
     font-weight: 700;
     color: #111;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .itm {
     font-family: "medium";
     font-size: 18px;
-    line-height: 30px;
+    line-height: 34px;
     font-weight: 500;
     color: #111;
 }
@@ -345,7 +356,12 @@ footer {
     .pageLinks {
         display: none;
     }
-
+    .brand{
+        padding-top: 10px;
+    }
+.title1{
+    padding-bottom: 0px;
+}
 }
 
 @media screen and (max-width:1201px) {
@@ -367,6 +383,18 @@ footer {
 @media screen and (max-width:766px) {
     .title1 h1 a{
         font-size: 36px;
+    }
+    .navbar{
+        padding-top: 30px;
+    }
+    .title1{
+        padding-top: 60px;
+    }
+    .signup input{
+        width: 79%;
+    }
+    .signup button{
+        width: 15%;
     }
 }
 @media screen and (max-width:760px) {
