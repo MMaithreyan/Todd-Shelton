@@ -385,7 +385,8 @@ footer {
         font-size: 36px;
     }
     .navbar{
-        padding-top: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
     .title1{
         padding-top: 60px;
