@@ -388,6 +388,9 @@ footer {
         padding-top: 25px;
         padding-bottom: 25px;
     }
+    .menu{
+        top: 0;
+    }
     .title1{
         padding-top: 60px;
     }
