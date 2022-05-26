@@ -123,7 +123,7 @@ nav a {
     transition: all .5s ease 0s;
 }
 
-.container {
+.container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
     margin: auto;
     width: 100%;
     display: grid;
@@ -132,7 +132,7 @@ nav a {
     gap: 50px;
 }
 
-.container::-webkit-scrollbar {
+.container1::-webkit-scrollbar, .container2::-webkit-scrollbar, .container3::-webkit-scrollbar , .container4::-webkit-scrollbar, .container5::-webkit-scrollbar, .container6::-webkit-scrollbar, .container7::-webkit-scrollbar, .container8::-webkit-scrollbar{
     display: none;
 }
 
@@ -182,7 +182,7 @@ li::marker {
     font-size: 8px;
 }
 
-.prv_btn, .nxt_btn {
+.prv_btn1, .nxt_btn1,.prv_btn2, .nxt_btn2,.prv_btn3, .nxt_btn3,.prv_btn4, .nxt_btn4,.prv_btn5, .nxt_btn5,.prv_btn6, .nxt_btn6,.prv_btn7, .nxt_btn7,.prv_btn8, .nxt_btn8 {
     position: absolute;
     text-decoration: none;
     background-color: #f9f9f9;
@@ -202,10 +202,12 @@ li::marker {
     width: 100%;
     z-index: 0;
 }
+
 .fa-angle-left:before {
     content: "\f104" !important;
     font-size: 10px;
 }
+
 .fa-angle-right:before {
     content: "\f105" !important;
     font-size: 10px;
@@ -221,11 +223,11 @@ li::marker {
     text-decoration: none;
 }
 
-.prv_btn {
+.prv_btn1,.prv_btn2,.prv_btn3,.prv_btn4,.prv_btn5,.prv_btn6,.prv_btn7,.prv_btn8 {
     left: -15px;
 }
 
-.nxt_btn {
+.nxt_btn1,.nxt_btn2,.nxt_btn3,.nxt_btn4,.nxt_btn5,.nxt_btn6,.nxt_btn7,.nxt_btn8{
     right: -15px;
 }
 
@@ -299,22 +301,26 @@ li::marker {
     font-weight: 600;
     font-size: 16px;
 }
-.updates{
+
+.updates {
     display: none;
 }
-.up_title{
+
+.up_title {
     font-family: "bold";
     font-size: 700;
     font-size: 16px;
     padding-top: 20px;
 }
-.up_date{
+
+.up_date {
     font-size: 16px;
     line-height: 24px;
     font-family: "medium";
     font-weight: 500;
     padding-top: 5px;
 }
+
 footer {
     width: 100%;
     padding-top: 140px;
@@ -332,7 +338,8 @@ footer {
 .logos img {
     padding-right: 20px;
 }
-.logos a{
+
+.logos a {
     font-family: "regular";
     font-size: 12px;
     letter-spacing: .01em;
@@ -356,88 +363,107 @@ footer {
     .pageLinks {
         display: none;
     }
-    .brand{
+
+    .brand {
         padding-top: 10px;
     }
-.title1{
-    padding-bottom: 0px;
-}
+
+    .title1 {
+        padding-bottom: 0px;
+    }
 }
 
 @media screen and (max-width:1201px) {
-.container{
-    grid-template-columns: repeat(6, 47%);
+    .container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
+        grid-template-columns: repeat(6, 47%);
 
+    }
 }
-}
+
 @media screen and (max-width:600px) {
-.container{
-    grid-template-columns: repeat(6, 100%);
+    .container1,.container2,.container3,.container4,.container5,.container6,.container7,.container8 {
+        grid-template-columns: repeat(6, 100%);
+    }
 }
-}
+
 @media screen and (max-width:1000px) {
-    .title1 h1 a{
+    .title1 h1 a {
         font-size: 48px;
     }
 }
+
 @media screen and (max-width:766px) {
-    .title1 h1 a{
+    .title1 h1 a {
         font-size: 36px;
     }
-    .navbar{
+
+    .navbar {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    .menu{
+
+    .menu {
         top: 0;
     }
-    .title1{
+
+    .title1 {
         padding-top: 60px;
     }
-    .signup input{
+
+    .signup input {
         width: 79%;
     }
-    .signup button{
+
+    .signup button {
         width: 15%;
     }
 }
+
 @media screen and (max-width:760px) {
-    .logo a{
+    .logo a {
         font-size: 21px;
     }
-    .updates{
+
+    .updates {
         display: block;
     }
-    .date_release{
+
+    .date_release {
         display: none;
     }
 }
+
 @media screen and (max-width:646px) {
-    .signup button{
+    .signup button {
         width: 100%;
         margin-bottom: 100px;
     }
-    .signup input{
+
+    .signup input {
         width: 100%;
         margin-bottom: 30px;
     }
 }
+
 @media screen and (max-width:883px) {
-    footer{
+    footer {
         display: flex;
         flex-direction: column;
         padding-top: 100px;
     }
-    .policy{
+
+    .policy {
         padding-left: 40px;
     }
+
     .logos {
         padding-left: 40px;
         position: relative;
         bottom: 60px;
         display: block;
     }
-    .logos img{
+
+    .logos img {
         padding-bottom: 10px;
     }
 }
