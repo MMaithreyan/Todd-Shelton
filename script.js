@@ -1,6 +1,6 @@
-let prv = document.querySelectorAll(".prv_btn1");
-let nxt = document.querySelectorAll(".nxt_btn1");
-let container = document.querySelectorAll(".container1");
+let prv1 = document.querySelectorAll(".prv_btn1");
+let nxt1 = document.querySelectorAll(".nxt_btn1");
+let container1 = document.querySelectorAll(".container1");
 
 let prv2 = document.querySelectorAll(".prv_btn2");
 let nxt2 = document.querySelectorAll(".nxt_btn2");
@@ -31,17 +31,39 @@ let nxt8 = document.querySelectorAll(".nxt_btn8");
 let cont8 = document.querySelectorAll(".container8");
 
 
-prv.forEach((left)=>{
-    left.addEventListener("click",()=>{
-        container.forEach((move)=>{
+
+
+        prv1.forEach((left) => {
+            left.addEventListener("click", () => {
+                container1.forEach((move) => {
+                    move.scrollLeft -= 450;
+                })
+            })
+        })
+
+        nxt1.forEach((right) => {
+            right.addEventListener("click", () => {
+                container1.forEach((move) => {
+                    move.scrollLeft += 450;
+                })
+            })
+        })
+  
+//########################################################################################################
+
+
+
+prv2.forEach((left) => {
+    left.addEventListener("click", () => {
+        cont2.forEach((move) => {
             move.scrollLeft -= 450;
         })
     })
 })
 
-nxt.forEach((right)=>{
-    right.addEventListener("click",()=>{
-        container.forEach((move)=>{
+nxt2.forEach((right) => {
+    right.addEventListener("click", () => {
+        cont2.forEach((move) => {
             move.scrollLeft += 450;
         })
     })
@@ -50,17 +72,17 @@ nxt.forEach((right)=>{
 
 
 
-prv2.forEach((left)=>{
-    left.addEventListener("click",()=>{
-        cont2.forEach((move)=>{
+prv3.forEach((left) => {
+    left.addEventListener("click", () => {
+        cont3.forEach((move) => {
             move.scrollLeft -= 450;
         })
     })
 })
 
-nxt2.forEach((right)=>{
-    right.addEventListener("click",()=>{
-        cont2.forEach((move)=>{
+nxt3.forEach((right) => {
+    right.addEventListener("click", () => {
+        cont3.forEach((move) => {
             move.scrollLeft += 450;
         })
     })
@@ -69,17 +91,17 @@ nxt2.forEach((right)=>{
 
 
 
-prv3.forEach((left)=>{
-    left.addEventListener("click",()=>{
-        cont3.forEach((move)=>{
+prv4.forEach((left) => {
+    left.addEventListener("click", () => {
+        cont4.forEach((move) => {
             move.scrollLeft -= 450;
         })
     })
 })
 
-nxt3.forEach((right)=>{
-    right.addEventListener("click",()=>{
-        cont3.forEach((move)=>{
+nxt4.forEach((right) => {
+    right.addEventListener("click", () => {
+        cont4.forEach((move) => {
             move.scrollLeft += 450;
         })
     })
@@ -88,17 +110,35 @@ nxt3.forEach((right)=>{
 
 
 
-prv4.forEach((left)=>{
-    left.addEventListener("click",()=>{
-        cont4.forEach((move)=>{
+prv5.forEach((left) => {
+    left.addEventListener("click", () => {
+        cont5.forEach((move) => {
             move.scrollLeft -= 450;
         })
     })
 })
 
-nxt4.forEach((right)=>{
-    right.addEventListener("click",()=>{
-        cont4.forEach((move)=>{
+nxt5.forEach((right) => {
+    right.addEventListener("click", () => {
+        cont5.forEach((move) => {
+            move.scrollLeft += 450;
+        })
+    })
+})
+//########################################################################################################
+
+
+prv6.forEach((left) => {
+    left.addEventListener("click", () => {
+        cont6.forEach((move) => {
+            move.scrollLeft -= 450;
+        })
+    })
+})
+
+nxt6.forEach((right) => {
+    right.addEventListener("click", () => {
+        cont6.forEach((move) => {
             move.scrollLeft += 450;
         })
     })
@@ -107,35 +147,17 @@ nxt4.forEach((right)=>{
 
 
 
-prv5.forEach((left)=>{
-    left.addEventListener("click",()=>{
-        cont5.forEach((move)=>{
+prv7.forEach((left) => {
+    left.addEventListener("click", () => {
+        cont7.forEach((move) => {
             move.scrollLeft -= 450;
         })
     })
 })
 
-nxt5.forEach((right)=>{
-    right.addEventListener("click",()=>{
-        cont5.forEach((move)=>{
-            move.scrollLeft += 450;
-        })
-    })
-})
-//########################################################################################################
-
-
-prv6.forEach((left)=>{
-    left.addEventListener("click",()=>{
-        cont6.forEach((move)=>{
-            move.scrollLeft -= 450;
-        })
-    })
-})
-
-nxt6.forEach((right)=>{
-    right.addEventListener("click",()=>{
-        cont6.forEach((move)=>{
+nxt7.forEach((right) => {
+    right.addEventListener("click", () => {
+        cont7.forEach((move) => {
             move.scrollLeft += 450;
         })
     })
@@ -144,40 +166,19 @@ nxt6.forEach((right)=>{
 
 
 
-prv7.forEach((left)=>{
-    left.addEventListener("click",()=>{
-        cont7.forEach((move)=>{
+prv8.forEach((left) => {
+    left.addEventListener("click", () => {
+        cont8.forEach((move) => {
             move.scrollLeft -= 450;
         })
     })
 })
 
-nxt7.forEach((right)=>{
-    right.addEventListener("click",()=>{
-        cont7.forEach((move)=>{
+nxt8.forEach((right) => {
+    right.addEventListener("click", () => {
+        cont8.forEach((move) => {
             move.scrollLeft += 450;
         })
     })
 })
 //########################################################################################################
-
-
-
-prv8.forEach((left)=>{
-    left.addEventListener("click",()=>{
-        cont8.forEach((move)=>{
-            move.scrollLeft -= 450;
-        })
-    })
-})
-
-nxt8.forEach((right)=>{
-    right.addEventListener("click",()=>{
-        cont8.forEach((move)=>{
-            move.scrollLeft += 450;
-        })
-    })
-})
-//########################################################################################################
-
-

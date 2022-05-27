@@ -193,7 +193,7 @@ li::marker {
     color: #111;
     top: 170px;
     font-size: 20px;
-    box-shadow: 0px 1px 1px 0px #111;
+    box-shadow: 0px 1px 1px 0px #a0a0a0;
 }
 
 .icon {
@@ -465,5 +465,25 @@ footer {
 
     .logos img {
         padding-bottom: 10px;
+    }
+}
+@media screen and (max-width:800px) {
+    .prv_btn1, .nxt_btn1,.prv_btn2, .nxt_btn2,.prv_btn3, .nxt_btn3,.prv_btn4, .nxt_btn4,.prv_btn5, .nxt_btn5,.prv_btn6, .nxt_btn6,.prv_btn7, .nxt_btn7,.prv_btn8, .nxt_btn8 {
+        top: 130px;
+    }
+}
+@media screen and (max-width:600px) {
+    .prv_btn1, .nxt_btn1,.prv_btn2, .nxt_btn2,.prv_btn3, .nxt_btn3,.prv_btn4, .nxt_btn4,.prv_btn5, .nxt_btn5,.prv_btn6, .nxt_btn6,.prv_btn7, .nxt_btn7,.prv_btn8, .nxt_btn8 {
+        top: 240px;
+    }
+}
+@media screen and (max-width:500px) {
+    .prv_btn1, .nxt_btn1,.prv_btn2, .nxt_btn2,.prv_btn3, .nxt_btn3,.prv_btn4, .nxt_btn4,.prv_btn5, .nxt_btn5,.prv_btn6, .nxt_btn6,.prv_btn7, .nxt_btn7,.prv_btn8, .nxt_btn8 {
+        top: 180px;
+    }
+}
+@media screen and (max-width:400px) {
+    .prv_btn1, .nxt_btn1,.prv_btn2, .nxt_btn2,.prv_btn3, .nxt_btn3,.prv_btn4, .nxt_btn4,.prv_btn5, .nxt_btn5,.prv_btn6, .nxt_btn6,.prv_btn7, .nxt_btn7,.prv_btn8, .nxt_btn8 {
+        top: 120px;
     }
 }
