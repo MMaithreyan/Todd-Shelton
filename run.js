@@ -1,16 +1,19 @@
-let prv = document.querySelectorAll(".prv_btn");
-let nxt = document.querySelectorAll(".nxt_btn");
-let cont = document.querySelectorAll(".container");
-for (i = 0 ; i < cont.length; i++) {
-    prv[i].addEventListener("click", function () {
-        console.log("mai");
-        cont[i].scrollLeft-= 450
-        //document.querySelector(".container").scrollLeft -= 450;
-    })
+const prv = document.querySelectorAll(".prv_btn");
+const nxt = document.querySelectorAll(".nxt_btn");
+const cont = document.querySelectorAll(".container");
+const width = document.querySelector(".products");
 
-    nxt[i].addEventListener("click", function () {
-        console.log("mai");
-        cont[i].scrollLeft+=450
-        //document.querySelector(".container").scrollLeft += 450;
-    })
+for (i = 0; i < cont.length; i++) {
+   const el1 = document.querySelector('[data-id="' + i + '"]');
+   console.log(el1);
+
+   prv[i].addEventListener("click", function () {
+      console.log("mai");
+      el1.scrollLeft -= width.offsetWidth + 50;
+   });
+
+   nxt[i].addEventListener("click", function () {
+      console.log("mai");
+      el1.scrollLeft += width.offsetWidth + 50;
+   });
 }
