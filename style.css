@@ -112,6 +112,11 @@ nav a {
     padding-bottom: 20px;
 }
 
+.brand {
+    padding-top: 60px;
+}
+
+
 .title1 h1 a {
     font-family: "bold";
     text-decoration: none;
@@ -132,13 +137,13 @@ nav a {
     gap: 50px;
 }
 
-.container::-webkit-scrollbar{
+.container::-webkit-scrollbar {
     display: none;
 }
 
 .products img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 strong {
@@ -176,13 +181,26 @@ ul li {
     line-height: 28px;
     font-weight: 500;
     color: #111;
+    list-style-type: none;
 }
 
-li::marker {
+ul li:before {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    display: block;
+    content: "";
+    background-color: #111;
+    position: relative;
+    top: 15px;
+    right: 10px;
+}
+
+/* li::marker {
     font-size: 8px;
-}
+} */
 
-.prv_btn,.nxt_btn{
+.prv_btn, .nxt_btn {
     position: absolute;
     text-decoration: none;
     background-color: #f9f9f9;
@@ -221,25 +239,25 @@ li::marker {
     font-weight: 600;
     color: #1192ec;
     text-decoration: none;
+    position: relative;
+    right: 10px;
 }
 
 .prv_btn {
     left: -15px;
 }
 
-.nxt_btn{
+.nxt_btn {
     right: -15px;
 }
 
-.brand {
-    padding-top: 70px;
-}
 
 .upcomming {
     font-size: 18px;
     font-family: "bold";
     font-weight: 700;
     color: #111;
+    padding-top: 20px;
 }
 
 .date_release {
@@ -337,6 +355,7 @@ footer {
 
 .logos img {
     padding-right: 20px;
+    opacity: 0.5;
 }
 
 .logos a {
@@ -378,10 +397,13 @@ footer {
         grid-template-columns: repeat(6, 47%);
 
     }
+    .prv_btn, .nxt_btn{
+        top: 190px;
+    }
 }
 
 @media screen and (max-width:600px) {
-    .container{
+    .container {
         grid-template-columns: repeat(6, 100%);
     }
 }
@@ -408,6 +430,10 @@ footer {
 
     .title1 {
         padding-top: 60px;
+    }
+
+    .brand {
+        padding-top: 20px;
     }
 
     .signup input {
@@ -467,23 +493,27 @@ footer {
         padding-bottom: 10px;
     }
 }
+
 @media screen and (max-width:800px) {
-    .prv_btn, .nxt_btn{
+    .prv_btn, .nxt_btn {
         top: 130px;
     }
 }
+
 @media screen and (max-width:600px) {
-    .prv_btn, .nxt_btn{
+    .prv_btn, .nxt_btn {
         top: 240px;
     }
 }
+
 @media screen and (max-width:500px) {
-    .prv_btn, .nxt_btn{
+    .prv_btn, .nxt_btn {
         top: 180px;
     }
 }
+
 @media screen and (max-width:400px) {
-    .prv_btn, .nxt_btn{
+    .prv_btn, .nxt_btn {
         top: 120px;
     }
 }
