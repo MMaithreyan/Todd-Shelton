@@ -1,6 +1,7 @@
+
 let prv1 = document.querySelectorAll(".prv_btn1");
 let nxt1 = document.querySelectorAll(".nxt_btn1");
-let container1 = document.querySelectorAll(".container1");
+let cont1 = document.querySelectorAll(".container1");
 
 let prv2 = document.querySelectorAll(".prv_btn2");
 let nxt2 = document.querySelectorAll(".nxt_btn2");
@@ -31,24 +32,22 @@ let nxt8 = document.querySelectorAll(".nxt_btn8");
 let cont8 = document.querySelectorAll(".container8");
 
 
-
-
-        prv1.forEach((left) => {
-            left.addEventListener("click", () => {
-                container1.forEach((move) => {
-                    move.scrollLeft -= 450;
-                })
-            })
+prv1.forEach((left) => {
+    left.addEventListener("click", () => {
+        cont1.forEach((move) => {
+            move.scrollLeft -= 450;
         })
+    })
+})
 
-        nxt1.forEach((right) => {
-            right.addEventListener("click", () => {
-                container1.forEach((move) => {
-                    move.scrollLeft += 450;
-                })
-            })
+nxt1.forEach((right) => {
+    right.addEventListener("click", () => {
+        cont1.forEach((move) => {
+            move.scrollLeft += 450;
         })
-  
+    })
+})
+
 //########################################################################################################
 
 

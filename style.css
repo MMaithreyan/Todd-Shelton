@@ -123,7 +123,7 @@ nav a {
     transition: all .5s ease 0s;
 }
 
-.container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
+.container {
     margin: auto;
     width: 100%;
     display: grid;
@@ -132,7 +132,7 @@ nav a {
     gap: 50px;
 }
 
-.container1::-webkit-scrollbar, .container2::-webkit-scrollbar, .container3::-webkit-scrollbar , .container4::-webkit-scrollbar, .container5::-webkit-scrollbar, .container6::-webkit-scrollbar, .container7::-webkit-scrollbar, .container8::-webkit-scrollbar{
+.container::-webkit-scrollbar{
     display: none;
 }
 
@@ -182,7 +182,7 @@ li::marker {
     font-size: 8px;
 }
 
-.prv_btn1, .nxt_btn1,.prv_btn2, .nxt_btn2,.prv_btn3, .nxt_btn3,.prv_btn4, .nxt_btn4,.prv_btn5, .nxt_btn5,.prv_btn6, .nxt_btn6,.prv_btn7, .nxt_btn7,.prv_btn8, .nxt_btn8 {
+.prv_btn,.nxt_btn{
     position: absolute;
     text-decoration: none;
     background-color: #f9f9f9;
@@ -223,11 +223,11 @@ li::marker {
     text-decoration: none;
 }
 
-.prv_btn1,.prv_btn2,.prv_btn3,.prv_btn4,.prv_btn5,.prv_btn6,.prv_btn7,.prv_btn8 {
+.prv_btn {
     left: -15px;
 }
 
-.nxt_btn1,.nxt_btn2,.nxt_btn3,.nxt_btn4,.nxt_btn5,.nxt_btn6,.nxt_btn7,.nxt_btn8{
+.nxt_btn{
     right: -15px;
 }
 
@@ -374,14 +374,14 @@ footer {
 }
 
 @media screen and (max-width:1201px) {
-    .container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
+    .container {
         grid-template-columns: repeat(6, 47%);
 
     }
 }
 
 @media screen and (max-width:600px) {
-    .container1,.container2,.container3,.container4,.container5,.container6,.container7,.container8 {
+    .container{
         grid-template-columns: repeat(6, 100%);
     }
 }
@@ -468,22 +468,22 @@ footer {
     }
 }
 @media screen and (max-width:800px) {
-    .prv_btn1, .nxt_btn1,.prv_btn2, .nxt_btn2,.prv_btn3, .nxt_btn3,.prv_btn4, .nxt_btn4,.prv_btn5, .nxt_btn5,.prv_btn6, .nxt_btn6,.prv_btn7, .nxt_btn7,.prv_btn8, .nxt_btn8 {
+    .prv_btn, .nxt_btn{
         top: 130px;
     }
 }
 @media screen and (max-width:600px) {
-    .prv_btn1, .nxt_btn1,.prv_btn2, .nxt_btn2,.prv_btn3, .nxt_btn3,.prv_btn4, .nxt_btn4,.prv_btn5, .nxt_btn5,.prv_btn6, .nxt_btn6,.prv_btn7, .nxt_btn7,.prv_btn8, .nxt_btn8 {
+    .prv_btn, .nxt_btn{
         top: 240px;
     }
 }
 @media screen and (max-width:500px) {
-    .prv_btn1, .nxt_btn1,.prv_btn2, .nxt_btn2,.prv_btn3, .nxt_btn3,.prv_btn4, .nxt_btn4,.prv_btn5, .nxt_btn5,.prv_btn6, .nxt_btn6,.prv_btn7, .nxt_btn7,.prv_btn8, .nxt_btn8 {
+    .prv_btn, .nxt_btn{
         top: 180px;
     }
 }
 @media screen and (max-width:400px) {
-    .prv_btn1, .nxt_btn1,.prv_btn2, .nxt_btn2,.prv_btn3, .nxt_btn3,.prv_btn4, .nxt_btn4,.prv_btn5, .nxt_btn5,.prv_btn6, .nxt_btn6,.prv_btn7, .nxt_btn7,.prv_btn8, .nxt_btn8 {
+    .prv_btn, .nxt_btn{
         top: 120px;
     }
 }
