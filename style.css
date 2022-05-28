@@ -128,7 +128,8 @@ nav a {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 31%);
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
     gap: 50px;
 }
 
