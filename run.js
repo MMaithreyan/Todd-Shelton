@@ -17,3 +17,19 @@ for (i = 0; i < cont.length; i++) {
       el1.scrollLeft += width.offsetWidth + 50;
    });
 }
+
+
+
+
+let a = document.getElementById("container_one");
+let count = a.children.length;
+console.log(count);
+
+//  var parentContainerWidth = document.getElementById("container_one");
+//  var a = parentContainerWidth.offsetWidth;
+//  console.log(a);
+
+// var elementCount = document.getElementsByTagName("div").filter(function () {
+//    return document.querySelector(this).offset().right >= a;
+// }).length;
+// alert(elementCount);
